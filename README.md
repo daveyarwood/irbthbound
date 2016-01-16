@@ -27,9 +27,19 @@ As you're playing, you'll be able to save the game, which will write some slight
 
 Clone this repo and run `bundle install` to install dependencies.
 
+### REPL
+
 `bin/console` will get you into a development REPL.
 
+### Game
+
 `rake run` starts a new game, which means starting a Pry session bound to an `Irbthbound::Player` instance.
+
+### Local Build
+
+`rake build && rake install` builds what you've got and installs it locally, including the `irbthbound` executable, which you can then run.
+
+### Deployment
 
 `rake release` to deploy to http://rubygems.org.
 
