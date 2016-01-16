@@ -29,7 +29,7 @@ Clone this repo and run `bundle install` to install dependencies.
 
 ### REPL
 
-`bin/console` will get you into a development REPL.
+`bundle exec bin/console` will get you into a development REPL.
 
 ### Game
 
