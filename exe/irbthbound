@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'irbthbound'
+require 'irbthbound/cli'
 
 Irbthbound::CLI.main(ARGV)
