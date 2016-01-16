@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'irbthbound/player'
+#
+# require "irb"
+# IRB.start
+
+require 'pry'
+Pry.config.prompt = [ proc { "ENTER INPUT> " }, proc { "MORE INPUT REQUIRED!*" }]
+Pry.start Irbthbound::Player.new
+
