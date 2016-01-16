@@ -4,8 +4,7 @@ For reasons I don't fully comprehend, I've always been mega-obsessed with [Earth
 
 In 2012, I decided it would be fun to write a port of EarthBound as a text adventure game. I worked on it for a little bit and then promptly got bored and moved onto something else.
 
-In 2016, I stumbled upon the code I had written and decided to play around with it a little more. In the course of refactoring the (admittedly terrible) Ruby code I had hacked up several years prior, I came upon the realization that, in lieu of writing my own interactive text adventure environment from scratch, I could hijack Ruby's interactive shell, [irb](https://en.wikipedia.org/wiki/Interactive_Ruby_Shell) and re-purpose it to do my bidding. Thanks to the open-ness
-and extensibility of irb and the Ruby language itself, this actually turned out to be pretty doable. Commands like `look`, `attack`, and `inventory` could be implemented as functions in the context of the shell environment. Thus, **IRBTHBOUND** was born.
+In 2016, I stumbled upon the code I had written and decided to play around with it a little more. In the course of refactoring the (admittedly terrible) Ruby code I had hacked up several years prior, I came upon the realization that, in lieu of writing my own interactive text adventure environment from scratch, I could hijack Ruby's interactive shell, [irb](https://en.wikipedia.org/wiki/Interactive_Ruby_Shell) and re-purpose it as a text adventure engine. Thanks to the open-ness and extensibility of irb and the Ruby language itself, this actually turned out to be pretty doable. Commands like `look`, `attack`, and `inventory` could be implemented as functions in the context of the shell environment. Thus, **IRBTHBOUND** was born.
 
 (I actually ended up using [Pry](http://pryrepl.org/) for the extra flexibility it provides over `irb`, like being able to redefine the prompt dynamically, etc. Perhaps it's a bit of a stretch to still call this **irb**thbound, but hey -- close enough, right!?)
 
@@ -13,7 +12,7 @@ I've tried to remain as true to the spirit of EarthBound as possible with this p
 
 ## Installation
 
-Pre-requisites: Ruby, Bundler
+Prerequisites: Ruby, Bundler
 
 Run `gem install irbthbound` to grab the latest release.
 
@@ -33,7 +32,7 @@ Clone this repo and run `bundle install` to install dependencies.
 
 ### Game
 
-`rake run` starts a new game, which means starting a Pry session bound to an `Irbthbound::Player` instance.
+You can run `irbthbound` without installing it to your system (and including any changes you've made locally) by running `bundle exec exe/irbthbound`.
 
 ### Local Build
 
