@@ -9,10 +9,6 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Dave Yarwood"]
   spec.email         = ["dave.yarwood@gmail.com"]
 
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
-  end
-
   spec.summary       = %q{An esoteric port of Earthbound/Mother 2 to IRB}
   spec.homepage      = "https://github.com/daveyarwood/irbthbound"
   spec.license       = "MIT"
