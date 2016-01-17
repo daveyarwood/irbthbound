@@ -22,5 +22,9 @@ module Irbthbound
     def chars
       @@game.characters
     end
+
+    def locs
+      @@game.locations
+    end
   end
 end

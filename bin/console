@@ -1,10 +1,9 @@
 #!/usr/bin/env ruby
 
 require 'bundler/setup'
+require 'irbthbound/game'
 require 'irbthbound/player'
 require 'pry'
 
-# TODO: make actual (initial) prompts
-Pry.config.prompt = [ proc { "ENTER INPUT> " }, proc { "MORE INPUT REQUIRED!*" }]
-Pry.start Irbthbound::Player.new
+Pry.start
 
