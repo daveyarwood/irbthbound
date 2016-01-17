@@ -18,8 +18,9 @@ module Irbthbound
     end
 
     def start
-      Pry.config.prompt = [ proc { "ENTER INPUT> " }, proc { "MORE INPUT REQUIRED!*" }]
-      Pry.start Irbthbound::Player.new
+      Pry.config.prompt = [ proc { "ENTER INPUT> " },
+                            proc { "MORE INPUT REQUIRED!*" }]
+      Pry.start Irbthbound::Player.new(self)
     end
   end
 
